@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM </title>
+    
+
+ <script src="https://kit.fontawesome.com/2b070e02a1.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(45deg , #E91E63, #42A5F5);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            margin-top: 87px;
+        }
+        .login{
+            background-color: white;
+            width: 400px;
+            padding: 100px 100px 50px 100px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 12px;
+            display: flex;
+            position: relative;
+            margin-left: 30vw;
+            margin-top: -11vw;
+        }
+        .icon{
+            background-color: red;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:-50px;
+        }
+        .icon i{
+            font-size: 14px;
+            color: white;
+        }
+        .login style{
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        button{
+background-color: red;
+color:white;
+width: 100px;
+outline: none;
+border: none;
+padding: 6px;
+cursor: pointer;
+        }
+        .separator{
+            width: 100%;
+            border-bottom: 1px solid #f1f1f1;
+            padding: 10px 0px;
+            text-align: center;
+            margin: 20px 0px;
+        }
+        .separator p{
+            color: #ccc;
+        }
+        .loginstyle{
+            margin: 20px 0px;
+            font: 10px;
+        }
+        .sociallogins{
+            align-content: center;
+            display: flex;
+            width: 223px;
+height: 46px;
+        }
+       
+        .sociallogins a{
+            display: inline-block;
+            padding: 16px;
+            margin-right: 20px;
+            background: #f06292;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .styleform{
+            width: 223px;
+            border: 2px solid #ccc;
+            height: 13px;
+            padding: 12px;
+        }
+        .bton{
+            width: 256px;
+            height: 46px;
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="login">
+                <div class="icon">
+                    <i class="far fa-user"></i>
+                </div>
+                <form class="form">
+                    <div class="loginstyle">   <input type="text" placeholder="username" id="username" class="styleform"></div>
+                 <div class="loginstyle">
+                    <input type="password" placeholder="password" id="Password" class="styleform">
+                 </div>
+                 <div class="loginstyle">
+                    <input type="checkbox" id="Rememberme"> Remember Password
+                 </div>
+                 <div class="loginstyle">
+                    <button class="bton">login</button>
+                 </div>
+                 <div class="loginstyle"> 
+                    <p>Not registered? <a href="link">Sign Up</a></p>
+                 </div>
+                </form>
+                <div class="separator">
+                    <p>Or login via social links</p>
+                </div>
+                <div class="sociallogins">
+                    <a href="facebook">
+                        <i class="fab fa-facebook-square"></i>
+                       facebook
+                       </a>
+                  <a href="google"style="width: 66px;">
+                    <i class="fab fa-google"></i>
+                    google
+                   </a>
+
+                </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
